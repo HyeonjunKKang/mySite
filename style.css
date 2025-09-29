@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  width: 100%;
+}
+
+header {
+  /* height: 320px; */
+  /* overflow: hidden; */
+}
+
+header nav {
+  height: 60px;
+  background-color: #000;
+}
+
+nav #main-nav {
+  text-align: center;
+}
+
+nav #main-nav li {
+  display: inline-block;
+  line-height: 60px;
+  padding: 0 20px;
+}
+nav #main-nav li:hover {
+  background-color: #444;
+}
+
+nav #main-nav li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#main-pic img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+section {
+  padding: 10px 5%;
+}
+section:nth-of-type(2n) {
+  background-color: #eee;
+}
+
+section .page-title {
+  margin: 20px 0;
+}
+section p {
+  line-height: 2.5;
+}
+section .content .photo {
+  display: none;
+}
+
+/* section - choice */
+
+#choice .content h2 {
+  margin-bottom: 20px;
+}
+#choice .content ol {
+  padding-left: 30px;
+}
+#choice .content ol li {
+  line-height: 2;
+}
+
+/* footer */
+footer {
+  height: 80px;
+  border-top: 2px solid #222;
+  text-align: center;
+}
+
+footer #bottom-menu {
+  list-style: none;
+  margin: 10px 20px;
+  text-align: center;
+}
+
+#bottom-menu li:last-child {
+  border: none;
+}
+
+#bottom-menu li {
+  display: inline-block;
+  padding: 0 10px;
+  border-right: 2px solid #ccc;
+}
+
+#bottom-menu li a {
+  text-decoration: none;
+  color: #444;
+  font-size: 0.9em; /*1em-16px*/
+}
+
+@media screen and (min-width: 780px) {
+  #container {
+    width: 780px;
+    margin: 0 auto;
+  }
+  /* header{height: 360px;} */
+  /* #main-pic img {height: 360px;} */
+  section {
+    height: 400px;
+    padding: 20px 5px;
+  }
+  section .content .photo {
+    display: block;
+    float: right;
+    width: 40%;
+  }
+  section .content .text {
+    width: 55%;
+    float: left;
+  }
+
+  footer #bottom-menu li a {
+    font-size: 1em;
+  }
+}

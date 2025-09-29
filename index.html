@@ -1,10 +1,92 @@
 <html>
-<head>
-    <title>My Web Page</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
-    <h1>Welcome to My Web Page</h1>
-    <p>This is a sample paragraph to demonstrate linking a CSS file.</p>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>My Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <nav>
+          <ul id="main-nav">
+            <li><a href="#intro">Introducing our cafe</a></li>
+            <li><a href="#choice">이 달의 추천</a></li>
+            <li><a href="#map">root</a></li>
+          </ul>
+        </nav>
+
+        <div id="main-pic">
+          <img src="images/images.webp" alt="Main Picture" />
+        </div>
+      </header>
+
+      <main id="main">
+        <section id="intro">
+          <div class="page-title">
+            <h1>紹介Cafe</h1>
+          </div>
+          <div class="content">
+            <div class="photo">
+              <img src="images/랄로대문.jpg" alt="ralodaemun" />
+            </div>
+            <div class="text">
+              <p>営業時間：　午前9時〜夜8時</p>
+              <p>
+                定休日：　毎週月曜日<br />
+                <i><small>（日曜日が　公休日の場合月曜日が営業日）</small></i>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="choice">
+          <div class="page-title">
+            <h1>今月のおすすめ</h1>
+          </div>
+          <div class="content">
+            <div class="photo">
+              <img src="images/랄로썬글.jpg" alt="ralodaemun" />
+            </div>
+            <div class="text">
+              <h2>핸드드립아이스커피</h2>
+              <ol>
+                <li>
+                  1인분 기준 서버에 각 얼음 5조각(한 조각에 20cc)을 넣고 추출을
+                  해잇
+                </li>
+                <li>
+                  평상시 보다 원두의 양은 2배 정도(20g)와 추출액은 얼음 포함
+                  200cc까지 내려잇.
+                </li>
+                <li>아이스 잔에 얼음 6~7개 섞어서 시원하게 마셔잇</li>
+              </ol>
+            </div>
+          </div>
+        </section>
+
+        <section id="map">
+          <div class="page-title">
+            <h1>길 안내</h1>
+          </div>
+          <div class="content">
+            <div class="photo">
+              <img src="images/랄로썬글04.png" alt="ralodaemun" />
+            </div>
+            <div class="text">
+              <p>그냥 알아서 좀 와라</p>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <ul id="bottom-menu">
+          <li><a href="">카페소개</a></li>
+          <li><a href="">개인정보 정책</a></li>
+          <li><a href="">이용 약관</a></li>
+          <li><a href="">사이트 맵</a></li>
+        </ul>
+      </footer>
+    </div>
+  </body>
 </html>
